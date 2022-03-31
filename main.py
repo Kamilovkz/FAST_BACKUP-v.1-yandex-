@@ -23,7 +23,7 @@ def search():
                     archive.write(os.path.join(address,file), file_name)
                     print(file_name, ' is copied')
     print('Archive is completed!')
-    yandex = yadisk.YaDisk(token='AQAAAAAimz9pAAfHt_DHHitN_UCeiX0Fy2N3WN4')
+    yandex = yadisk.YaDisk(token='PASTHEREYOURAPI')
     yandex.upload(archive.filename, '/' + archive.filename)
     print('Archive successfully sent')
     os.remove(archive.filename)

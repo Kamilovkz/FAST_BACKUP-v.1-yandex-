@@ -1,4 +1,5 @@
-# FAST_BACKUP-v.1-yandex-
+# fast backup files (solution by Kamilovkz)
+
 Best solution for backup your files using Python (yandex)
 
 Before run project do these few steps of instructions:

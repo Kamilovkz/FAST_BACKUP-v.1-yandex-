@@ -3,6 +3,9 @@ import zipfile
 import datetime
 import yadisk
 
+def main():
+    seacrh()
+
 def search():
     poisk = []
     with zipfile.ZipFile('{}.zip'.format(str(datetime.datetime.now()).replace("-","").replace('.', '').replace(':','')), 'w') as archive:
@@ -28,4 +31,6 @@ def search():
     print('Archive successfully sent')
     os.remove(archive.filename)
     print('Archive successfully deleted from folder')
-search()
+
+if __name__ == "__main__":
+    main()
